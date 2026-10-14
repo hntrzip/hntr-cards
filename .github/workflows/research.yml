@@ -1,0 +1,97 @@
+name: hntr 수집 (공개 저장소에서 무료로 실행)
+
+# 2026-10-14 대표 결정: 사진 후보·사진 가져오기·검색어 트렌드는 공개 저장소에서 돌린다(GitHub 시간 무료).
+# requests/ 에 요청 파일을 올리면 실행 → 비공개 저장소(threads-autopost)의 스크립트로 처리 → 결과는 비공개 저장소에 push.
+# 결과 파일은 이 공개 저장소에 남기지 않는다. 처리한 요청 파일은 지운다.
+# 필요한 Secrets(이 저장소): GH_PAT(threads-autopost 쓰기 가능), NAVER_CLIENT_ID, NAVER_CLIENT_SECRET
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - requests/photo_search.txt
+      - requests/fetch.txt
+      - requests/trend.txt
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hntr-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: pub
+          sparse-checkout: requests
+      - name: 처리할 요청 확인
+        id: req
+        run: |
+          has=""
+          for f in photo_search fetch trend; do
+            if [ -s "pub/requests/$f.txt" ]; then has="$has $f"; fi
+          done
+          echo "list=$has" >> "$GITHUB_OUTPUT"
+          echo "요청:${has:- 없음}"
+      - uses: actions/checkout@v4
+        if: steps.req.outputs.list != ''
+        with:
+          repository: hntrzip/threads-autopost
+          token: ${{ secrets.GH_PAT }}
+          path: priv
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/*/
+            /scripts/
+      - uses: actions/setup-python@v5
+        if: steps.req.outputs.list != ''
+        with:
+          python-version: "3.12"
+      - name: 사진 후보 찾기 (네이버 이미지)
+        if: contains(steps.req.outputs.list, 'photo_search')
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: |
+          pip install -q pillow
+          mkdir -p priv/posts/instagram
+          cp pub/requests/photo_search.txt priv/posts/instagram/photo_search.txt
+          python priv/scripts/naver_images.py
+          rm -f priv/posts/instagram/photo_search.txt
+      - name: 사진 가져오기
+        if: contains(steps.req.outputs.list, 'fetch')
+        run: |
+          pip install -q pillow
+          mkdir -p priv/posts/instagram
+          cp pub/requests/fetch.txt priv/posts/instagram/fetch.txt
+          python priv/scripts/ig_fetch.py
+      - name: 검색어 트렌드 (네이버)
+        if: contains(steps.req.outputs.list, 'trend')
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: |
+          mkdir -p priv/posts/instagram
+          cp pub/requests/trend.txt priv/posts/instagram/trend.txt
+          python priv/scripts/naver_trend.py
+          rm -f priv/posts/instagram/trend.txt
+      - name: 결과를 비공개 저장소에 저장
+        if: steps.req.outputs.list != ''
+        working-directory: priv
+        run: |
+          git config user.name "threads-bot"
+          git config user.email "threads-bot@users.noreply.github.com"
+          git add --sparse -A posts/instagram/images posts/instagram/web 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "공개 저장소 수집:${{ steps.req.outputs.list }} $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')" && git pull --rebase && git push)
+      - name: 처리한 요청 지우기
+        if: always() && steps.req.outputs.list != ''
+        working-directory: pub
+        run: |
+          git config user.name "threads-bot"
+          git config user.email "threads-bot@users.noreply.github.com"
+          for f in ${{ steps.req.outputs.list }}; do git rm -q "requests/$f.txt"; done
+          git commit -m "수집 요청 처리 완료:${{ steps.req.outputs.list }}" && git pull --rebase && git push
