@@ -1,0 +1,17 @@
+c_liar1 https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/10/13/aaf96910-042a-405b-9ada-ca9a20d74124.jpg
+c_liar2 https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/29/dc647941-aca8-44a5-9cba-53d20fd27c50.jpg
+c_liar3 https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/10/06/4bae0638-9ba3-4144-a897-539be33ea275.jpg
+c_liar4 https://isp.edailystatic.com/data/isp/image/2026/10/06/isp20261006000065.1024x.0.jpg
+c_final1 https://img.tvreportcdn.de/cms-content/uploads/2026/09/29/fb980ce5-74d2-415d-82d3-3ae839f8d043.jpg
+c_final2 https://img.tvreportcdn.de/cms-content/uploads/2026/09/29/e45c3860-844f-41ee-853c-c23785d439cb.jpg
+c_final3 https://img.tvreportcdn.de/cms-content/uploads/2026/09/29/ea913cf4-2db8-4f8c-aae2-b461a4e8ff87.jpg
+c_ggul1 https://img.tvreportcdn.de/cms-content/uploads/2026/10/01/3d8e8549-3e3f-4a90-8997-b784a933bf6e.jpg
+c_hot1 https://img.tenasia.co.kr/photo/202610/BF.46059081.1.jpg
+c_lotto1 https://img.tvreportcdn.de/cms-content/uploads/2026/09/01/6d254d5f-7eca-4240-9282-27fbafa69cda.jpg
+c_lotto2 https://img.tenasia.co.kr/photo/202610/BF.46039078.1.jpg
+c_lotto3 https://img.tvreportcdn.de/cms-content/uploads/2026/09/01/ca3337a3-693f-49e7-9e98-76b3cc83dd4a.jpg
+c_movie1 https://isp.edailystatic.com/data/isp/image/2026/09/09/isp20260909000018.1001x.0.png
+c_movie2 https://img.tenasia.co.kr/photo/202610/BF.46035830.1.jpg
+c_movie3 https://img.etoday.co.kr/pto_db/2026/08/20260826110201_2378494_650_930.jpg
+c_geo1 https://img.tenasia.co.kr/photo/202610/BF.46061559.1.jpg
+c_geo2 https://isp.edailystatic.com/data/isp/image/2026/10/12/isp20261012000011.568x.0.jpg
