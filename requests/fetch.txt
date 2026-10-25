@@ -1,6 +1,0 @@
-n26f_iga_1 https://tong.visitkorea.or.kr/cms/resource/18/2926718_image2_1.jpg
-n26f_iga_2 https://tong.visitkorea.or.kr/cms/resource/19/2926719_image2_1.jpg
-n26f_iga_3 https://tong.visitkorea.or.kr/cms/resource/20/2926720_image2_1.jpg
-n26f_iga_4 https://tong.visitkorea.or.kr/cms/resource/21/2926721_image2_1.jpg
-n26f_iga_5 https://tong.visitkorea.or.kr/cms/resource/22/2926722_image2_1.jpg
-n26f_iga_6 https://tong.visitkorea.or.kr/cms/resource/69/2685069_image2_1.jpg
