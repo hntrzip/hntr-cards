@@ -1,9 +1,0 @@
-giftv_1 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/651f0564-9691-4564-a30a-958b11f98adb.jpg
-giftv_2 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/1a2f7add-370e-42fc-9c0e-6ef7950bc622.jpg
-giftv_3 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/224ff215-953b-4696-b229-22c30e14951e.jpg
-giftv_4 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/e4ba38b3-7f3f-49f3-82cb-4ba99f350c25.jpg
-giftv_5 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/ef2107b3-f826-4f49-a6f4-07988e8e1795.jpg
-giftv_6 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/e5c70b96-40d4-4b2a-a944-f2e7b265367c.jpg
-giftv_7 https://img.tvreportcdn.de/cms-content/uploads/2026/10/02/1858a284-cbac-4e44-802b-b6d5677eeb22.jpg
-giftv_8 https://img.insight.co.kr/static/2026/10/02/1200/img_20261002132820_lh7u1jh5.jpg
-giftv_9 https://img.insight.co.kr/static/2026/10/02/1200/img_20261002132822_0s59jt57.jpg
