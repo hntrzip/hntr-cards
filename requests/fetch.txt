@@ -1,9 +1,0 @@
-d_e1_1 https://prod-pics.guide.michelin.com/api/public/content/cb4674ed6ded49bf811196b4169d983a.jpeg
-d_e1_2 https://prod-pics.guide.michelin.com/api/public/content/d5ed3eadc72d41fabec6c96deb99426c.jpeg
-d_c4_4 https://mediahub.seoul.go.kr/uploads/mediahub/2025/10/ZSzNHDEXfjyWSovHyjjYjGirCbJySHrw.jpg
-d_c4_5 https://mediahub.seoul.go.kr/uploads/mediahub/2025/10/MwFMYUcLndUvevLjyWTYvoagOuhbLise.jpg
-d_c4_6 https://mediahub.seoul.go.kr/uploads/mediahub/2025/11/QsGxCfNwVGYzflomXRFfAXacwtMnjGOc.png
-d_c5_4 https://mediahub.seoul.go.kr/uploads/mediahub/2024/11/FmnlTChHcLwZwZlzGyydHWsKOtUJhULi.jpg
-d_c5_5 https://mediahub.seoul.go.kr/uploads/mediahub/2024/11/umgLQNHfTnukSjlQecEBkeEyzCzyomcL.jpg
-d_b4_4 https://mediahub.seoul.go.kr/uploads/mediahub/2026/07/BrIFwdvjlfzOWUnExcVTxwBLWygNiiKq.jpg
-d_b2_2 https://mediahub.seoul.go.kr/uploads/mediahub/2024/12/XJbTgxJpLJdoYDJsHxEnYdsUmUFXUxSg.jpg
