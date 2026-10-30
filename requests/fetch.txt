@@ -1,0 +1,14 @@
+c30_munmu1 https://isp.edailystatic.com/data/isp/image/2026/10/13/isp20261013000052.1280x.0.jpg
+c30_munmu2 https://img.tvreportcdn.de/cms-content/uploads/2026/10/13/12016d02-7c44-4bc4-896a-a658da39280b.jpg
+c30_munmu3 https://img.tvreportcdn.de/cms-content/uploads/2026/10/13/439254c1-8fb8-446e-b6ee-28e49512c36f.jpg
+c30_munmu4 https://isp.edailystatic.com/data/isp/image/2026/10/27/isp20261027000063.1280x.0.jpg
+c30_munmu5 https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/202610270916485835_ent_ig.jpeg
+c30_munmu6 https://cdnweb01.wikitree.co.kr/webdata/editor/202610/14/202610141244240574_ent_ig.jpeg
+c30_mega1 https://cdn.newsflix.co.kr/news/photo/202610/32925_33318_854.jpg
+c30_mega2 https://www.foodtoday.or.kr/data/photos/20261044/art_17932548189316_94dbdc.jpg
+c30_mega3 https://cdn.gpkorea.com/news/photo/202610/148071_314885_5046.jpg
+c30_mega4 https://cdn.reviewtimes.co.kr/news/photo/202610/13201_82405_570.jpg
+c30_cafe1 https://www.coex.co.kr/wp-content/uploads/2025/03/서울카페쇼메인포스터_SNSver.png
+c30_cafe2 https://ticketimage.interpark.com/Play/image/large/26/26010190_p.gif
+c30_cafe3 https://www.foodtoday.or.kr/data/photos/20251148/art_17639463393254_6d7e81.jpg
+c30_cafe4 https://www.foodtoday.or.kr/data/photos/20251147/art_17635441187774_7fe85c.bmp
